@@ -15,6 +15,8 @@ public class CheckboxTest extends TestSuperClass {
 				.ClickCheckboxes();
 		
 		Assert.assertEquals(allChecked, true, "Checkboxes are not Selected!");
+		
+		//testing push file 
 				
 		
 		
