@@ -19,7 +19,7 @@ public class SliderPageObject extends SuperPageObject {
 	public String MoveSlider() {
 		Actions move = new Actions(driver);
 		WebElement slider = driver.findElement(By.tagName("input"));
-		Action action = (Action) move.dragAndDropBy(slider, 138, 168).build();
+		Action action = (Action) move.dragAndDropBy(slider, slider.getSize().getWidth(), 0).build();
 		action.perform();
 		return slider.getAttribute("value");
 	}
