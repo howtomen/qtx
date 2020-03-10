@@ -18,6 +18,8 @@ public class TestSuperClass {
 
 	  @AfterTest
 	  public void afterTest() {
-		  driver.quit();
+		  if(driver != null) {
+				driver.quit();
+			}
 	  }
 }
