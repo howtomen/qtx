@@ -1,9 +1,11 @@
-package qtx;
+package pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
+import frameworks.SuperPageObject;
 
 public class DropDownPageObject extends SuperPageObject {
 	
@@ -12,9 +14,8 @@ public class DropDownPageObject extends SuperPageObject {
 		super(driverInstance, url);
 	}
 	
-	public DropDownPageObject OpenDropdownPage(String BaseUrl) {
-		String url = BaseUrl + "/dropdown";
-		driver.get(url);
+	public DropDownPageObject OpenDropdownPage() {
+		Navigate("/dropdown");
 		return this;
 	}
 	

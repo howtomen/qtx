@@ -1,8 +1,10 @@
-package qtx;
+package pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import frameworks.SuperPageObject;
 
 public class SecurePageObject extends SuperPageObject{
 	

@@ -1,8 +1,10 @@
-package qtx;
+package pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import frameworks.SuperPageObject;
 
 public class CheckboxPageObject extends SuperPageObject {
 	
@@ -10,9 +12,8 @@ public class CheckboxPageObject extends SuperPageObject {
 		super(driverInstance, url);
 	}
 	
-	public CheckboxPageObject OpenCheckboxPage(String BaseUrl) {
-		String url = BaseUrl+ "/checkboxes";
-		Navigate(url);
+	public CheckboxPageObject OpenCheckboxPage() {
+		Navigate("/checkboxes");
 		return this;
 	}
 	public boolean ClickCheckboxes() {

@@ -1,5 +1,7 @@
-package qtx;
+package frameworks;
 import org.openqa.selenium.chrome.ChromeDriver;
+import frameworks.DriverManager;
+
 public class ChromeDriverManager extends DriverManager {
 	@Override
 	protected void startService() {

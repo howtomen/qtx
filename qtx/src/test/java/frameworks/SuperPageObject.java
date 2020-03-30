@@ -1,4 +1,4 @@
-package qtx;
+package frameworks;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -6,14 +6,18 @@ import org.openqa.selenium.support.PageFactory;
 public abstract class SuperPageObject {
 
 	protected WebDriver driver;
+	protected String baseUrl;
 	
 	protected SuperPageObject(WebDriver driverInstance, String baseUrl) {
-		driver = driverInstance;
-		PageFactory.initElements(driver, this);
+		this.driver = driverInstance;
+        this.baseUrl = baseUrl;
+        
+        PageFactory.initElements(driver, this);
+        
 	}
 	
 	protected void Navigate(String url) {
-		
-		driver.get(url);
+		String link = baseUrl+ url;
+		driver.get(link);
 	}
 }

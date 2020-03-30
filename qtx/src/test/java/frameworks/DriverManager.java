@@ -1,5 +1,7 @@
-package qtx;
+package frameworks;
+
 import org.openqa.selenium.WebDriver;
+
 public abstract class DriverManager {
 	protected WebDriver driver;
 	protected abstract void startService();

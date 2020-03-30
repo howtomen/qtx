@@ -2,6 +2,8 @@ package qtx;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import frameworks.TestSuperClass;
+
 public class TheInternet extends TestSuperClass{
 
 	

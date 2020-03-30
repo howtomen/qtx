@@ -1,4 +1,7 @@
-package qtx;
+package frameworks;
+
+import frameworks.ChromeDriverManager;
+
 public class DriverManagerFactory {
 	public static DriverManager getManager(DriverType type) {
 		switch(type) {
