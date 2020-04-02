@@ -39,6 +39,7 @@ public class WindowsPageObject extends SuperPageObject {
 		    }
 		}
 		String text = driver.findElement(By.xpath("//div[contains(@class, 'example')]/h3")).getText();
+		driver.close();
 		driver.switchTo().window(parent);
 		return text;
 	}
