@@ -134,7 +134,7 @@ public class ApiTests {
 					.statusCode(200)
 				.extract()
 					.jsonPath();
-		System.out.println(json.get("data").toString());
+		//System.out.println(json.get("data").toString());  #used to test i was getting correct json info
 		for(int i = 0; i < 6; i++ ) {
 			String first_name = json.get("data[" + i + "].first_name").toString();
 			String last_name = json.get("data[" + i + "].last_name").toString();

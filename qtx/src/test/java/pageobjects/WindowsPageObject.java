@@ -3,7 +3,6 @@ package pageobjects;
 import java.util.Set;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import frameworks.SuperPageObject;
 
 public class WindowsPageObject extends SuperPageObject {
-	protected String parent;
+	private String parent;
 	
 	public WindowsPageObject(WebDriver driver, String baseUrl) {
 		super(driver, baseUrl);
