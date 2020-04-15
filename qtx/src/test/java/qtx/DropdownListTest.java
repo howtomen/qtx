@@ -11,7 +11,7 @@ public class DropdownListTest extends TestSuperClass {
 	@Test
 	public void canSelectDrobdownListItem() {
 		
-		String expectedSelection = new String("Option 2");
+		String expectedSelection = "Option 2";
 
 
 		String actualSelection = new DropDownPageObject(driver, BaseUrl)
