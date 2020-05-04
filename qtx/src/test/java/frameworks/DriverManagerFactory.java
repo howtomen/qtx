@@ -7,6 +7,8 @@ public class DriverManagerFactory {
 		switch(type) {
 		case CHROME:
 			return new ChromeDriverManager();
+		case FIREFOX:
+			return new FirefoxDriverManager();
 		default:
 			System.out.printf("We do not support this driver: %s", type);
 		}

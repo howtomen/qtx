@@ -1,6 +1,6 @@
 package frameworks;
 
 public enum DriverType {
-	CHROME
+	CHROME, FIREFOX
 }
 

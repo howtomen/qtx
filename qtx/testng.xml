@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Suite" thread-count="1">
+  <test name="FirefoxTest">
+    <parameter name= "browser" value= "firefox"/>
     <classes>
-      <class name="qtx.TextDownloadTest"/>
-      <class name="qtx.SQLTests"/>
-      <class name="qtx.TheInternet"/>
-      <class name="qtx.ScrollParagraphTest"/>
       <class name="qtx.DropdownListTest"/>
-      <class name="qtx.FrameTest"/>
-      <class name="qtx.CheckboxTest"/>
-      <class name="qtx.HoverProfileTest"/>
-      <class name="qtx.NewWindowTest"/>
-      <class name="qtx.TableValueTest"/>
-      <class name="qtx.TheInternet_2"/>
-      <class name="qtx.JavascriptAlertTest"/>
-      <class name="qtx.DownloadFileTest"/>
-      <class name="qtx.SliderTest"/>
+      <class name= "qtx.FrameTest"/>
+      <class name= "qtx.AddRemoveElements"/>
+      <class name= "qtx.BasicAuth"/>
     </classes>
-  </test> <!-- Test -->
+  </test>
+  <test name="ChromeTest">
+  <parameter name= "browser" value= "chrome"/>
+    <classes>
+      <class name="qtx.DropdownListTest"/>
+      <class name= "qtx.FrameTest"/>
+      <class name= "qtx.AddRemoveElements"/>
+      <class name= "qtx.BasicAuth"/>
+    </classes>
+  </test>
 </suite> <!-- Suite -->
